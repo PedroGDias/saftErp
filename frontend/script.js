@@ -20,7 +20,7 @@ async function uploadAndRun() {
   output.textContent = "Uploading files and running analysis...";
 
   try {
-    const response = await fetch("https://safterpfileupload.azurewebsites.net/api/uploadsFiles", {
+    const response = await fetch("https://safterpfileupload.azurewebsites.net/api/upload-files", {
       method: "POST",
       body: formData
     });
