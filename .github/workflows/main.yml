@@ -16,4 +16,4 @@ jobs:
         with:
           app_location: frontend
           skip_app_build: true
-          deployment_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
