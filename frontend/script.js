@@ -20,10 +20,11 @@ async function uploadAndRun() {
   output.textContent = "Uploading files and running analysis...";
 
   try {
-    const response = await fetch("/api/process-files", {
+    const response = await fetch("https://safterp-uploadfiles.azurewebsites.net/api/uploadFiles", {
       method: "POST",
       body: formData
     });
+
 
     if (!response.ok) {
       throw new Error(`Server error: ${response.status}`);
