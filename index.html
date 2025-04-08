@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Process Files</title>
+</head>
+<body>
+  <h1>Upload Files to Process</h1>
+
+  <label>XML Files:</label><br>
+  <input type="file" id="xmlFiles" multiple accept=".xml"><br><br>
+
+  <label>Excel File:</label><br>
+  <input type="file" id="excelFile" accept=".xlsx"><br><br>
+
+  <button onclick="uploadAndRun()">Run</button>
+
+  <h3>Output:</h3>
+  <pre id="output">Waiting for action...</pre>
+  <a id="reportLink" href="#" target="_blank" style="display: none;">Download Report</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
